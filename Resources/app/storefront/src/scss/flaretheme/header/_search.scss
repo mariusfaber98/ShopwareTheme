@@ -1,0 +1,92 @@
+/*
+Search
+==============================================
+*/
+
+.header-search {
+    height: $search-height;
+    width: $search-width;
+}
+
+.flare-header-search-group {
+    width: $search-width;
+    height: $search-height;
+    border: $search-border-width solid $search-border-color;
+    border-radius: $search-border-radius;
+    background-color: $search-background-color;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    transition: width 700ms cubic-bezier(0.18, 0.89, 0.32, 1.07);
+    right: 0;
+
+    &:focus-within {
+        width: $search-max-width;
+        border-color: $search-border-color-focus;
+    }
+}
+
+.flare-header-search-input {
+    font-size: $search-font-size;
+    font-weight: $search-font-weight;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Workaround for missing placeholder color in chrome */
+    /* stylelint-disable-next-line selector-no-vendor-prefix */
+    &::-webkit-input-placeholder {
+        color: $search-text-color;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.flare-header-search-button {
+    width: $search-height;
+    height: 100%;
+    transition: background 200ms ease-out;
+    background: transparent;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    &-left {
+        .flare-header-search-input {
+            padding-left: 40px;
+        }
+    }
+
+    &-right {
+        .flare-header-search-input {
+            padding-left: 10px;
+        }
+
+        .flare-header-search-button {
+            margin-left: auto;
+        }
+    }
+
+    .icon-search {
+        color: $search-icon-color;
+    }
+
+    &:hover {
+        &,
+        .icon-search {
+            color: $search-icon-color-hover;
+        }
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}

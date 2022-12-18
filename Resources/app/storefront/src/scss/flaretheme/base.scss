@@ -1,0 +1,24 @@
+/*
+Flare Theme styles
+==================================================
+Contains the imports to all Flare Theme styles.
+*/
+
+/*
+ * Variables, Mixins, Functions
+ * ---------------------------- */
+@import 'abstract/variables';
+
+/*
+ * Header
+ * ---------- */
+@import 'header/header';
+@import 'header/navigation';
+@import 'header/search';
+@import 'header/actions';
+@import 'header/usp-bar';
+
+/*
+ * Category page
+ * ---------- */
+@import 'category/sidebar-filter';

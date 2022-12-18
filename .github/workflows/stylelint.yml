@@ -1,0 +1,29 @@
+name: Stylelint
+
+on:
+    push:
+        branches:
+            - master
+    workflow_dispatch:
+        branches:
+            - master
+
+jobs:
+
+    stylelint:
+        name: Stylelint
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clone Code
+              uses: actions/checkout@v2
+
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: 7.4
+
+            - name: Install Dependencies
+              run: make dev
+
+            - name: Run Stylelint
+              run: make stylelint

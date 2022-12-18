@@ -1,0 +1,9 @@
+{% block layout_flare_header_base_navigation %}
+    <div class="flare-header-base-navigation-col {{ flareHeaderElementCssClasses }}">
+        <div class="nav-main">
+            {% block base_navigation_inner %}
+                {% sw_include '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

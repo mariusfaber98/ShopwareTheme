@@ -1,0 +1,3209 @@
+{
+  "name": "Flare Theme",
+  "author": "flaretheme.com",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@FlareTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@StorefrontBootstrap",
+    "@Plugins",
+    "app/storefront/src/scss/storefront/base.scss",
+    "app/storefront/src/scss/flaretheme/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/flare-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "tabs": {
+      "header": {
+        "label": {
+          "en-GB": "Header",
+          "de-DE": "Header"
+        }
+      },
+      "category": {
+        "label": {
+          "en-GB": "Category page",
+          "de-DE": "Kategorieseite"
+        }
+      }
+    },
+    "blocks": {
+      "headerTop": {
+        "label": {
+          "en-GB": "Header Top",
+          "de-DE": "Header Oben"
+        }
+      },
+      "headerMain": {
+        "label": {
+          "en-GB": "Header Main",
+          "de-DE": "Header Mitte"
+        }
+      },
+      "headerBot": {
+        "label": {
+          "en-GB": "Header Bot",
+          "de-DE": "Header Unten"
+        }
+      },
+      "logo": {
+        "label": {
+          "en-GB": "Logo",
+          "de-DE": "Logo"
+        }
+      },
+      "navigation": {
+        "label": {
+          "en-GB": "Navigation",
+          "de-DE": "Navigation"
+        }
+      },
+      "search": {
+        "label": {
+          "en-GB": "Search",
+          "de-DE": "Suche"
+        }
+      },
+      "actions": {
+        "label": {
+          "en-GB": "Actions",
+          "de-DE": "Aktionen"
+        }
+      },
+      "actionsLeft": {
+        "label": {
+          "en-GB": "Actions Left",
+          "de-DE": "Aktionen Links"
+        }
+      },
+      "actionsRight": {
+        "label": {
+          "en-GB": "Actions Right",
+          "de-DE": "Aktionen Rechts"
+        }
+      },
+      "uspBar": {
+        "label": {
+          "en-GB": "USP bar",
+          "de-DE": "USP-Bar"
+        }
+      },
+      "breadcrumbs": {
+        "label": {
+          "en-GB": "Breadcrumbs",
+          "de-DE": "Breadcrumbs"
+        }
+      },
+      "sidebarFilter": {
+        "en-GB": "Sidebar Filter",
+        "de-DE": "Sidebar Filter"
+      }
+    },
+    "sections": {
+      "layout": {
+        "label": {
+          "en-GB": "Layout",
+          "de-DE": "Layout"
+        }
+      },
+      "slots": {
+        "label": {
+          "en-GB": "Slots",
+          "de-DE": "Slots"
+        }
+      },
+      "border": {
+        "label": {
+          "en-GB": "Border",
+          "de-DE": "Rahmen"
+        }
+      },
+      "text": {
+        "label": {
+          "en-GB": "Text",
+          "de-DE": "Text"
+        }
+      },
+      "font": {
+        "label": {
+          "en-GB": "Font",
+          "de-DE": "Schrift"
+        }
+      },
+      "color": {
+        "label": {
+          "en-GB": "Color",
+          "de-DE": "Farbe"
+        }
+      }
+    },
+    "fields": {
+      "flare-header-top-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-top",
+          "de-DE": "CSS-Klassen | flare-header-top"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-top-container-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-top-container",
+          "de-DE": "CSS-Klassen | flare-header-top-container"
+        },
+        "type": "text",
+        "value": "container py-1",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-top-row-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-top-row",
+          "de-DE": "CSS-Klassen | flare-header-top-row"
+        },
+        "type": "text",
+        "value": "row no-gutters align-items-center justify-content-center justify-content-sm-around justify-content-md-between",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-top-first-element": {
+        "label": {
+          "en-GB": "First element",
+          "de-DE": "Erstes Element"
+        },
+        "type": "text",
+        "value": "usp-bar",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-first-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | First column",
+          "de-DE": "CSS-Klassen | Erste Spalte"
+        },
+        "type": "text",
+        "value": "col",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-second-element": {
+        "label": {
+          "en-GB": "Second element",
+          "de-DE": "Zweites Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-second-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Second column",
+          "de-DE": "CSS-Klassen | Zweite Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-third-element": {
+        "label": {
+          "en-GB": "Third element",
+          "de-DE": "Drittes Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-third-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Third column",
+          "de-DE": "CSS-Klassen | Dritte Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-fourth-element": {
+        "label": {
+          "en-GB": "Fourth element",
+          "de-DE": "Viertes Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-fourth-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fourth column",
+          "de-DE": "CSS-Klassen | Vierte Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-fifth-element": {
+        "label": {
+          "en-GB": "Fifth element",
+          "de-DE": "Fünftes Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-fifth-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fifth column",
+          "de-DE": "CSS-Klassen | Fünfte Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "slots"
+      },
+      "flare-header-top-background-color-full-width": {
+        "label": {
+          "en-GB": "Background color full width",
+          "de-DE": "Hintergrundfarbe volle Breite"
+        },
+        "type": "color",
+        "value": "#f0f2f5",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "color"
+      },
+      "flare-header-top-background-color-boxed": {
+        "label": {
+          "en-GB": "Background color boxed",
+          "de-DE": "Hintergrundfarbe boxed"
+        },
+        "type": "color",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "headerTop",
+        "section": "color"
+      },
+      "flare-header-main-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-main",
+          "de-DE": "CSS-Klassen | flare-header-main"
+        },
+        "type": "text",
+        "value": "border-bottom",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-main-container-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-main-container",
+          "de-DE": "CSS-Klassen | flare-header-main-container"
+        },
+        "type": "text",
+        "value": "container py-2",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-main-row-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-main-row",
+          "de-DE": "CSS-Klassen | flare-header-main-row"
+        },
+        "type": "text",
+        "value": "row no-gutters align-items-center",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-main-first-element": {
+        "label": {
+          "en-GB": "First element",
+          "de-DE": "Erstes Element"
+        },
+        "type": "text",
+        "value": "actions-left",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-first-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | First column",
+          "de-DE": "CSS-Klassen | Erste Spalte"
+        },
+        "type": "text",
+        "value": "col-auto d-block d-lg-none",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-second-element": {
+        "label": {
+          "en-GB": "Second element",
+          "de-DE": "Zweites Element"
+        },
+        "type": "text",
+        "value": "logo",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-second-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Second column",
+          "de-DE": "CSS-Klassen | Zweite Spalte"
+        },
+        "type": "text",
+        "value": "col col-lg-auto d-flex justify-content-center justify-content-lg-start p-0 m-0",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-third-element": {
+        "label": {
+          "en-GB": "Third element",
+          "de-DE": "Drittes Element"
+        },
+        "type": "text",
+        "value": "navigation",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-third-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Third column",
+          "de-DE": "CSS-Klassen | Dritte Spalte"
+        },
+        "type": "text",
+        "value": "col d-none d-lg-block",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-fourth-element": {
+        "label": {
+          "en-GB": "Fourth element",
+          "de-DE": "Viertes Element"
+        },
+        "type": "text",
+        "value": "search",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-fourth-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fourth column",
+          "de-DE": "CSS-Klassen | Vierte Spalte"
+        },
+        "type": "text",
+        "value": "col-auto d-none d-xl-block mx-3",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-fifth-element": {
+        "label": {
+          "en-GB": "Fifth element",
+          "de-DE": "Fünftes Element"
+        },
+        "type": "text",
+        "value": "actions-right",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-fifth-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fifth column",
+          "de-DE": "CSS-Klassen | Fünfte Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "slots"
+      },
+      "flare-header-main-background-color-full-width": {
+        "label": {
+          "en-GB": "Background color full width",
+          "de-DE": "Hintergrundfarbe volle Breite"
+        },
+        "type": "color",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "color"
+      },
+      "flare-header-main-background-color-boxed": {
+        "label": {
+          "en-GB": "Background color boxed",
+          "de-DE": "Hintergrundfarbe boxed"
+        },
+        "type": "color",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "headerMain",
+        "section": "color"
+      },
+      "flare-header-bot-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-bot",
+          "de-DE": "CSS-Klassen | flare-header-bot"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-bot-container-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-bot-container",
+          "de-DE": "CSS-Klassen | flare-header-bot-container"
+        },
+        "type": "text",
+        "value": "container",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-bot-row-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-bot-row",
+          "de-DE": "CSS-Klassen | flare-header-bot-row"
+        },
+        "type": "text",
+        "value": "row no-gutters align-items-center",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-bot-first-element": {
+        "label": {
+          "en-GB": "First element",
+          "de-DE": "Erstes Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-first-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | First column",
+          "de-DE": "CSS-Klassen | Erste Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-second-element": {
+        "label": {
+          "en-GB": "Second element",
+          "de-DE": "Zweites Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-second-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Second column",
+          "de-DE": "CSS-Klassen | Zweite Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-third-element": {
+        "label": {
+          "en-GB": "Third element",
+          "de-DE": "Drittes Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-third-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Third column",
+          "de-DE": "CSS-Klassen | Dritte Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-fourth-element": {
+        "label": {
+          "en-GB": "Fourth element",
+          "de-DE": "Viertes Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-fourth-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fourth column",
+          "de-DE": "CSS-Klassen | Vierte Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-fifth-element": {
+        "label": {
+          "en-GB": "Fifth element",
+          "de-DE": "Fünftes Element"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "logo",
+              "label": {
+                "en-GB": "Logo",
+                "de-DE": "Logo"
+              }
+            },
+            {
+              "value": "navigation",
+              "label": {
+                "en-GB": "Navigation",
+                "de-DE": "Navigation"
+              }
+            },
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "actions-left",
+              "label": {
+                "en-GB": "Action icons left",
+                "de-DE": "Aktion icons links"
+              }
+            },
+            {
+              "value": "actions-right",
+              "label": {
+                "en-GB": "Action icons right",
+                "de-DE": "Aktion icons rechts"
+              }
+            },
+            {
+              "value": "usp-bar",
+              "label": {
+                "en-GB": "USP bar",
+                "de-DE": "USP-Bar"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-fifth-element-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fifth column",
+          "de-DE": "CSS-Klassen | Fünfte Spalte"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "slots"
+      },
+      "flare-header-bot-background-color-full-width": {
+        "label": {
+          "en-GB": "Background color full width",
+          "de-DE": "Hintergrundfarbe volle Breite"
+        },
+        "type": "color",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "color"
+      },
+      "flare-header-bot-background-color-boxed": {
+        "label": {
+          "en-GB": "Background color boxed",
+          "de-DE": "Hintergrundfarbe boxed"
+        },
+        "type": "color",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "headerBot",
+        "section": "color"
+      },
+      "flare-header-logo-width": {
+        "label": {
+          "en-GB": "Logo weight",
+          "de-DE": "Logo Breite"
+        },
+        "type": "text",
+        "value": "237px",
+        "editable": true,
+        "tab": "header",
+        "block": "logo",
+        "section": "layout"
+      },
+      "flare-header-logo-height": {
+        "label": {
+          "en-GB": "Logo height",
+          "de-DE": "Logo höhe"
+        },
+        "type": "text",
+        "value": "35px",
+        "editable": true,
+        "tab": "header",
+        "block": "logo",
+        "section": "layout"
+      },
+      "flare-header-navigation-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | main-navigation-menu",
+          "de-DE": "CSS-Klassen | main-navigation-menu"
+        },
+        "type": "text",
+        "value": "justify-content-center",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-navigation-link-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | main-navigation-link",
+          "de-DE": "CSS-Klassen | main-navigation-link"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-navigation-first-link-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | first -> main-navigation-link",
+          "de-DE": "CSS-Klassen | first -> main-navigation-link"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "layout"
+      },
+      "flare-header-navigation-last-link-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | last -> main-navigation-link",
+          "de-DE": "CSS-Klassen | last -> main-navigation-link"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "layout"
+      },
+      "flare-header-navigation-text-transform": {
+        "label": {
+          "en-GB": "Text transform",
+          "de-DE": "Text Transform"
+        },
+        "type": "text",
+        "value": "none",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "none",
+              "label": {
+                "en-GB": "Default",
+                "de-DE": "Normal"
+              }
+            },
+            {
+              "value": "uppercase",
+              "label": {
+                "en-GB": "Uppercase",
+                "de-DE": "Großbuchstaben"
+              }
+            },
+            {
+              "value": "lowercase",
+              "label": {
+                "en-GB": "Lowercase",
+                "de-DE": "Kleinbuchstaben"
+              }
+            },
+            {
+              "value": "capitalize",
+              "label": {
+                "en-GB": "First letter capitalized",
+                "de-DE": "Erster Buchstabe groß"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "text"
+      },
+      "flare-header-navigation-line-height": {
+        "label": {
+          "en-GB": "Line Height",
+          "de-DE": "Zeilenhöhe"
+        },
+        "type": "text",
+        "value": "15px",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "text"
+      },
+      "flare-header-navigation-font-size": {
+        "label": {
+          "en-GB": "Font size",
+          "de-DE": "Schriftgröße"
+        },
+        "type": "text",
+        "value": "16px",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "font"
+      },
+      "flare-header-navigation-font-weight": {
+        "label": {
+          "en-GB": "Font weight",
+          "de-DE": "Schriftstärke"
+        },
+        "type": "text",
+        "value": "bold",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "font"
+      },
+      "flare-header-navigation-font-size-active": {
+        "label": {
+          "en-GB": "Font size @active",
+          "de-DE": "Schriftgröße @active"
+        },
+        "type": "text",
+        "value": "16px",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "font"
+      },
+      "flare-header-navigation-font-weight-active": {
+        "label": {
+          "en-GB": "Font weight @active",
+          "de-DE": "Schriftstärke @active"
+        },
+        "type": "text",
+        "value": "bold",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "font"
+      },
+      "flare-header-navigation-text-color": {
+        "label": {
+          "en-GB": "Text color",
+          "de-DE": "Schriftfarbe"
+        },
+        "type": "color",
+        "value": "#52667a",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "color"
+      },
+      "flare-header-navigation-background-color": {
+        "label": {
+          "en-GB": "Background color",
+          "de-DE": "Hintergrundfarbe"
+        },
+        "type": "color",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "color"
+      },
+      "flare-header-navigation-text-color-hover": {
+        "label": {
+          "en-GB": "Text color @hover",
+          "de-DE": "Schriftfarbe @hover"
+        },
+        "type": "color",
+        "value": "#189eff",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "color"
+      },
+      "flare-header-navigation-background-color-hover": {
+        "label": {
+          "en-GB": "Background color @hover",
+          "de-DE": "Hintergrundfarbe @hover"
+        },
+        "type": "color",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "color"
+      },
+      "flare-header-navigation-text-color-active": {
+        "label": {
+          "en-GB": "Text color @active",
+          "de-DE": "Schriftfarbe @active"
+        },
+        "type": "color",
+        "value": "#189eff",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "color"
+      },
+      "flare-header-navigation-background-color-active": {
+        "label": {
+          "en-GB": "Background color @active",
+          "de-DE": "Hintergrundfarbe @active"
+        },
+        "type": "color",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "navigation",
+        "section": "color"
+      },
+      "flare-header-search-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | header-search",
+          "de-DE": "CSS-Klassen | header-search"
+        },
+        "type": "text",
+        "value": "mr-4",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-search-group-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-search-group",
+          "de-DE": "CSS-Klassen | flare-header-search-group"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-search-input-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-search-input",
+          "de-DE": "CSS-Klassen | flare-header-search-input"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-search-button-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-search-button",
+          "de-DE": "CSS-Klassen | flare-header-search-button"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-search-max-width": {
+        "label": {
+          "en-GB": "Max width",
+          "de-DE": "Maximale Breite"
+        },
+        "type": "text",
+        "value": "850px",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "layout"
+      },
+      "flare-header-search-width": {
+        "label": {
+          "en-GB": "Width",
+          "de-DE": "Breite"
+        },
+        "type": "text",
+        "value": "250px",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "layout"
+      },
+      "flare-header-search-button-position": {
+        "label": {
+          "en-GB": "Search icon (Button) position",
+          "de-DE": "Such icon (Button) position"
+        },
+        "type": "text",
+        "value": "flare-header-search-button-left",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "flare-header-search-button-left",
+              "label": {
+                "en-GB": "Left",
+                "de-DE": "Links"
+              }
+            },
+            {
+              "value": "flare-header-search-button-right",
+              "label": {
+                "en-GB": "Right",
+                "de-DE": "Rechts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "layout"
+      },
+      "flare-header-search-height": {
+        "label": {
+          "en-GB": "Height search bar",
+          "de-DE": "Höhe Suchleiste"
+        },
+        "type": "text",
+        "value": "38px",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "layout"
+      },
+      "flare-header-search-border-width": {
+        "label": {
+          "en-GB": "Border width",
+          "de-DE": "Rahmen Breite"
+        },
+        "type": "text",
+        "value": "1px",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "border"
+      },
+      "flare-header-search-border-radius": {
+        "label": {
+          "en-GB": "Border radius",
+          "de-DE": "Rahmen Rundung"
+        },
+        "type": "text",
+        "value": "9999px",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "border"
+      },
+      "flare-header-search-font-size": {
+        "label": {
+          "en-GB": "Font size",
+          "de-DE": "Schriftgröße"
+        },
+        "type": "text",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "font"
+      },
+      "flare-header-search-font-weight": {
+        "label": {
+          "en-GB": "Font weight",
+          "de-DE": "Schriftstärke"
+        },
+        "type": "text",
+        "value": "null",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "font"
+      },
+      "flare-header-search-text-color": {
+        "label": {
+          "en-GB": "Text color",
+          "de-DE": "Schriftfarbe"
+        },
+        "type": "color",
+        "value": "#52667a",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "color"
+      },
+      "flare-header-search-background-color": {
+        "label": {
+          "en-GB": "Background color",
+          "de-DE": "Hintergrundfarbe"
+        },
+        "type": "color",
+        "value": "#ffffff",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "color"
+      },
+      "flare-header-search-border-color": {
+        "label": {
+          "en-GB": "Border color",
+          "de-DE": "Randfarbe"
+        },
+        "type": "color",
+        "value": "#d1d9e0",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "color"
+      },
+      "flare-header-search-icon-color": {
+        "label": {
+          "en-GB": "Icon color",
+          "de-DE": "Icon Farbe"
+        },
+        "type": "color",
+        "value": "#52667a",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "color"
+      },
+      "flare-header-search-border-color-focus": {
+        "label": {
+          "en-GB": "Border color @focus",
+          "de-DE": "Randfarbe @focus"
+        },
+        "type": "color",
+        "value": "rgba(24, 159, 255, 0.58)",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "color"
+      },
+      "flare-header-search-icon-color-hover": {
+        "label": {
+          "en-GB": "Icon color @hover",
+          "de-DE": "Icon Farbe @hover"
+        },
+        "type": "color",
+        "value": "#189eff",
+        "editable": true,
+        "tab": "header",
+        "block": "search",
+        "section": "color"
+      },
+      "flare-header-action-account-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | account-menu-btn",
+          "de-DE": "CSS-Klassen | account-menu-btn"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "actions",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-action-cart-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | header-cart-btn",
+          "de-DE": "CSS-Klassen | header-cart-btn"
+        },
+        "type": "text",
+        "value": "pr-0",
+        "editable": true,
+        "tab": "header",
+        "block": "actions",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-action-menu-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | nav-main-toggle-btn",
+          "de-DE": "CSS-Klassen | nav-main-toggle-btn"
+        },
+        "type": "text",
+        "value": "pl-0",
+        "editable": true,
+        "tab": "header",
+        "block": "actions",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-action-search-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | search-toggle-btn",
+          "de-DE": "CSS-Klassen | search-toggle-btn"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "actions",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-action-wishlist-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | header-wishlist-btn",
+          "de-DE": "CSS-Klassen | header-wishlist-btn"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "actions",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-actions-icon-color": {
+        "label": {
+          "en-GB": "Icon color",
+          "de-DE": "Icon Farbe"
+        },
+        "type": "color",
+        "value": "#52667a",
+        "editable": true,
+        "tab": "header",
+        "block": "actions",
+        "section": "color"
+      },
+      "flare-header-actions-icon-color-hover": {
+        "label": {
+          "en-GB": "Icon color @hover",
+          "de-DE": "Icon Farbe @hover"
+        },
+        "type": "color",
+        "value": "#189eff",
+        "editable": true,
+        "tab": "header",
+        "block": "actions",
+        "section": "color"
+      },
+      "flare-header-actions-left-row-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-actions-left-row",
+          "de-DE": "CSS-Klassen | flare-header-actions-left-row"
+        },
+        "type": "text",
+        "value": "row no-gutters",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-actions-right-row-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-actions-right-row",
+          "de-DE": "CSS-Klassen | flare-header-actions-right-row"
+        },
+        "type": "text",
+        "value": "row no-gutters",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-first-action-left": {
+        "label": {
+          "en-GB": "First action icon left",
+          "de-DE": "Erstes Aktion icon links"
+        },
+        "type": "text",
+        "value": "menu",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-first-action-left-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | First action icon left",
+          "de-DE": "CSS-Klassen | Erstes Aktion icon links"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-second-action-left": {
+        "label": {
+          "en-GB": "Second action icon left",
+          "de-DE": "Zweites Aktion icon links"
+        },
+        "type": "text",
+        "value": "search",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-second-action-left-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Second action icon left",
+          "de-DE": "CSS-Klassen | Zweites Aktion icon links"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-third-action-left": {
+        "label": {
+          "en-GB": "Third action icon left",
+          "de-DE": "Drittes Aktion icon links"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-third-action-left-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Third action icon left",
+          "de-DE": "CSS-Klassen | Drittes Aktion icon links"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-fourth-action-left": {
+        "label": {
+          "en-GB": "Fourth action icon left",
+          "de-DE": "Viertes Aktion icon links"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-fourth-action-left-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fourth action icon left",
+          "de-DE": "CSS-Klassen | Viertes Aktion icon links"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-fifth-action-left": {
+        "label": {
+          "en-GB": "Fifth action icon left",
+          "de-DE": "Fünftes Aktion icon links"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-fifth-action-left-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fifth action icon left",
+          "de-DE": "CSS-Klassen | Fünftes Aktion icon links"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsLeft",
+        "section": "slots"
+      },
+      "flare-header-first-action-right": {
+        "label": {
+          "en-GB": "First action icon right",
+          "de-DE": "Erstes Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "search",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-first-action-right-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | First action icon right",
+          "de-DE": "CSS-Klassen | Erstes Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "col-auto d-none d-lg-block d-xl-none",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-second-action-right": {
+        "label": {
+          "en-GB": "Second action icon right",
+          "de-DE": "Zweites Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "wishlist",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-second-action-right-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Second action icon right",
+          "de-DE": "CSS-Klassen | Zweites Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-third-action-right": {
+        "label": {
+          "en-GB": "Third action icon right",
+          "de-DE": "Drittes Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "account",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-third-action-right-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Third action icon right",
+          "de-DE": "CSS-Klassen | Drittes Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-fourth-action-right": {
+        "label": {
+          "en-GB": "Fourth action icon right",
+          "de-DE": "Viertes Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "cart",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-fourth-action-right-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fourth action icon right",
+          "de-DE": "CSS-Klassen | Viertes Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-fifth-action-right": {
+        "label": {
+          "en-GB": "Fifth action icon right",
+          "de-DE": "Fünftes Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "empty",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "search",
+              "label": {
+                "en-GB": "Search",
+                "de-DE": "Suche"
+              }
+            },
+            {
+              "value": "wishlist",
+              "label": {
+                "en-GB": "Wishlist",
+                "de-DE": "Merkzettel"
+              }
+            },
+            {
+              "value": "account",
+              "label": {
+                "en-GB": "Account",
+                "de-DE": "Konto"
+              }
+            },
+            {
+              "value": "cart",
+              "label": {
+                "en-GB": "Cart",
+                "de-DE": "Warenkorb"
+              }
+            },
+            {
+              "value": "menu",
+              "label": {
+                "en-GB": "Menu",
+                "de-DE": "Menü"
+              }
+            },
+            {
+              "value": "empty",
+              "label": {
+                "en-GB": "Empty",
+                "de-DE": "Nichts"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-fifth-action-right-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | Fifth action icon right",
+          "de-DE": "CSS-Klassen | Fünftes Aktion icon rechts"
+        },
+        "type": "text",
+        "value": "col-auto",
+        "editable": true,
+        "tab": "header",
+        "block": "actionsRight",
+        "section": "slots"
+      },
+      "flare-header-usp-bar-row-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-usp-bar-row",
+          "de-DE": "CSS-Klassen | flare-header-usp-bar-row"
+        },
+        "type": "text",
+        "value": "row no-gutters align-items-center justify-content-center justify-content-sm-around justify-content-md-between",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-usp-1-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-usp-1-col",
+          "de-DE": "CSS-Klassen | flare-header-usp-1-col"
+        },
+        "type": "text",
+        "value": "col-auto d-flex",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-usp-2-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-usp-2-col",
+          "de-DE": "CSS-Klassen | flare-header-usp-2-col"
+        },
+        "type": "text",
+        "value": "col-auto d-none d-sm-flex",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-usp-3-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-usp-3-col",
+          "de-DE": "CSS-Klassen | flare-header-usp-3-col"
+        },
+        "type": "text",
+        "value": "col-auto d-none d-md-flex",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-usp-4-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-usp-4-col",
+          "de-DE": "CSS-Klassen | flare-header-usp-4-col"
+        },
+        "type": "text",
+        "value": "col-auto d-none d-lg-flex",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-usp-5-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-usp-5-col",
+          "de-DE": "CSS-Klassen | flare-header-usp-5-col"
+        },
+        "type": "text",
+        "value": "col-auto d-none d-xl-flex",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-usp-img-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-usp-img",
+          "de-DE": "CSS-Klassen | flare-header-usp-img"
+        },
+        "type": "text",
+        "value": "",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-usp-text-css-classes": {
+        "label": {
+          "en-GB": "CSS classes | flare-header-usp-text",
+          "de-DE": "CSS-Klassen | flare-header-usp-text"
+        },
+        "type": "text",
+        "value": "ml-2 align-self-center",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout",
+        "fullWidth": true
+      },
+      "flare-header-usp-image-width": {
+        "label": {
+          "en-GB": "Image width",
+          "de-DE": "Bild Breite"
+        },
+        "type": "text",
+        "value": "22px",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout"
+      },
+      "flare-header-usp-image-height": {
+        "label": {
+          "en-GB": "Image height",
+          "de-DE": "Bild Höhe"
+        },
+        "type": "text",
+        "value": "22px",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "layout"
+      },
+      "flare-header-usp-1-image": {
+        "label": {
+          "en-GB": "USP #1 image",
+          "de-DE": "USP #1 Bild"
+        },
+        "type": "media",
+        "value": "app/storefront/src/assets/icons/secure-payment.png",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-1-text": {
+        "label": {
+          "en-GB": "USP #1 text",
+          "de-DE": "USP #1 Text"
+        },
+        "type": "textarea",
+        "value": "Secure payment",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-2-image": {
+        "label": {
+          "en-GB": "USP #2 image",
+          "de-DE": "USP #2 Bild"
+        },
+        "type": "media",
+        "value": "app/storefront/src/assets/icons/free-shipping.png",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-2-text": {
+        "label": {
+          "en-GB": "USP #2 text",
+          "de-DE": "USP #2 Text"
+        },
+        "type": "textarea",
+        "value": "Free Shipping",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-3-image": {
+        "label": {
+          "en-GB": "USP #3 image",
+          "de-DE": "USP #3 Bild"
+        },
+        "type": "media",
+        "value": "app/storefront/src/assets/icons/return-policy.png",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-3-text": {
+        "label": {
+          "en-GB": "USP #3 text",
+          "de-DE": "USP #3 Text"
+        },
+        "type": "textarea",
+        "value": "30-day return policy",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-4-image": {
+        "label": {
+          "en-GB": "USP #4 image",
+          "de-DE": "USP #4 Bild"
+        },
+        "type": "media",
+        "value": "app/storefront/src/assets/icons/germany.png",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-4-text": {
+        "label": {
+          "en-GB": "USP #4 text",
+          "de-DE": "USP #4 Text"
+        },
+        "type": "textarea",
+        "value": "Made in Germany",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-5-image": {
+        "label": {
+          "en-GB": "USP #5 image",
+          "de-DE": "USP #5 Bild"
+        },
+        "type": "media",
+        "value": "app/storefront/src/assets/icons/sustainability.png",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-5-text": {
+        "label": {
+          "en-GB": "USP #5 text",
+          "de-DE": "USP #5 Text"
+        },
+        "type": "textarea",
+        "value": "Sustainability",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "slots"
+      },
+      "flare-header-usp-text-transform": {
+        "label": {
+          "en-GB": "Text transform",
+          "de-DE": "Text Transform"
+        },
+        "type": "text",
+        "value": "none",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "none",
+              "label": {
+                "en-GB": "Default",
+                "de-DE": "Normal"
+              }
+            },
+            {
+              "value": "uppercase",
+              "label": {
+                "en-GB": "Uppercase",
+                "de-DE": "Großbuchstaben"
+              }
+            },
+            {
+              "value": "lowercase",
+              "label": {
+                "en-GB": "Lowercase",
+                "de-DE": "Kleinbuchstaben"
+              }
+            },
+            {
+              "value": "capitalize",
+              "label": {
+                "en-GB": "First letter capitalized",
+                "de-DE": "Erster Buchstabe groß"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "text"
+      },
+      "flare-header-usp-line-height": {
+        "label": {
+          "en-GB": "Line Height",
+          "de-DE": "Zeilenhöhe"
+        },
+        "type": "text",
+        "value": "15px",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "text"
+      },
+      "flare-header-usp-font-size": {
+        "label": {
+          "en-GB": "Font size",
+          "de-DE": "Schriftgröße"
+        },
+        "type": "text",
+        "value": "15px",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "font"
+      },
+      "flare-header-usp-font-weight": {
+        "label": {
+          "en-GB": "Font weight",
+          "de-DE": "Schriftstärke"
+        },
+        "type": "text",
+        "value": "400",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "font"
+      },
+      "flare-header-usp-text-color": {
+        "label": {
+          "en-GB": "Text color",
+          "de-DE": "Schriftfarbe"
+        },
+        "type": "color",
+        "value": "#52667a",
+        "editable": true,
+        "tab": "header",
+        "block": "uspBar",
+        "section": "color"
+      },
+      "sw-color-brand-primary": {
+        "value": "#231645"
+      },
+      "sw-color-brand-secondary": {
+        "value": "#242523"
+      },
+      "sw-border-color": {
+        "value": "#ced4da"
+      },
+      "sw-color-success": {
+        "value": "#3cc261"
+      },
+      "sw-color-info": {
+        "value": "#26b6cf"
+      },
+      "sw-color-warning": {
+        "value": "#ffbd5d"
+      },
+      "sw-color-danger": {
+        "value": "#e52427"
+      },
+      "sw-font-family-base": {
+        "value": "'Inter', sans-serif"
+      },
+      "sw-text-color": {
+        "value": "#161616"
+      },
+      "sw-font-family-headline": {
+        "value": "'Inter', sans-serif"
+      },
+      "sw-headline-color": {
+        "value": "#161616"
+      },
+      "sw-color-price": {
+        "value": "#161616"
+      },
+      "sw-color-buy-button": {
+        "value": "#3cc261"
+      },
+      "sw-color-buy-button-text": {
+        "value": "#ffffff"
+      }
+    }
+  }
+}

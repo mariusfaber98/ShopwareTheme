@@ -1,0 +1,15 @@
+{% block layout_header_search_toggle %}
+    <div class="flare-search-toggle-col {{ flareHeaderActionCssClasses }}">
+        <div class="search-toggle">
+            <button class="btn header-actions-btn search-toggle-btn js-search-toggle-btn collapsed {{ theme_config('flare-header-action-search-css-classes') }}"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#searchCollapse"
+                    aria-expanded="false"
+                    aria-controls="searchCollapse"
+                    aria-label="{{ "header.searchButton"|trans|striptags }}">
+                {% sw_icon 'search' %}
+            </button>
+        </div>
+    </div>
+{% endblock %}

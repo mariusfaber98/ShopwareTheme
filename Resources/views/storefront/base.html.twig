@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_header_inner %}
+    <div data-flyout-menu="true">
+        {% sw_include '@Storefront/storefront/flaretheme/layout/header/flare-header.html.twig' %}
+
+        {% sw_include '@Storefront/storefront/flaretheme/layout/navigation/flare-navigation-flyouts.html.twig' %}
+    </div>
+{% endblock %}
+
+{% block base_navigation %}
+    {% sw_include '@Storefront/storefront/layout/header/search.html.twig' %}
+{% endblock %}

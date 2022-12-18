@@ -1,0 +1,42 @@
+/*
+Main navigation
+==============================================
+Custom styling for main navigation on larger screens.
+
+Based on bootstrap nav:
+https://getbootstrap.com/docs/4.3/components/navs/
+*/
+
+.main-navigation-menu {
+    font-size: $navigation-font-size;
+    font-weight: $navigation-font-weight;
+    text-transform: $navigation-text-transform;
+    line-height: $navigation-line-height;
+}
+
+.main-navigation-link {
+    color: $navigation-text-color;
+    background-color: $navigation-background-color;
+
+    &.active {
+        font-size: $navigation-font-size-active;
+        font-weight: $navigation-font-weight-active;
+        color: $navigation-text-color-active;
+        background-color: $navigation-background-color-active;
+    }
+
+    &:hover {
+        color: $navigation-text-color-hover;
+        background-color: $navigation-background-color-hover;
+    }
+
+    &::before {
+        font-size: $navigation-font-size-active;
+        font-weight: $navigation-font-weight-active;
+        display: block;
+        content: attr(title);
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+}

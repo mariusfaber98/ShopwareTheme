@@ -1,0 +1,36 @@
+/*
+Sidebar Filter
+==================================================
+*/
+
+.is--sidebar {
+    .filter-panel-item {
+        margin-bottom: unset;
+
+        .filter-panel-item-toggle {
+            border: unset;
+        }
+    }
+
+    .filter-panel-item-dropdown {
+        padding: 0;
+        max-height: unset;
+        border: unset;
+
+        /* stylelint-disable-next-line selector-no-vendor-prefix */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .btn {
+        font-size: 1.275rem;
+        line-height: 30px;
+        padding: 8px 12px;
+        font-weight: 600;
+
+        &:focus {
+            box-shadow: unset;
+        }
+    }
+}

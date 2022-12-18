@@ -1,0 +1,28 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "indentation": 4,
+    "max-nesting-depth": 3,
+    "scss/at-extend-no-missing-placeholder": null,
+    "declaration-property-value-disallowed-list": null,
+    "font-family-name-quotes": null,
+    "function-url-quotes": null,
+    "at-rule-empty-line-before": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "string-quotes": "single",
+    "at-rule-disallowed-list": "always",
+    "declaration-empty-line-before": "never",
+    "selector-class-pattern": [
+      "^[a-z0-9\\-]+$",
+      {
+        "message":
+        "Selector should be written in lowercase with hyphens (selector-class-pattern)"
+      }
+    ],
+    "selector-no-qualifying-type": [
+      true, {
+        "ignore": ["attribute", "class"]
+      }
+    ]
+  }
+}

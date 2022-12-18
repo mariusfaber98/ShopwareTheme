@@ -1,0 +1,165 @@
+{% block layout_flare_header_top %}
+    {% if not (
+        theme_config('flare-header-top-first-element') is same as('empty') and
+        theme_config('flare-header-top-second-element') is same as('empty') and
+        theme_config('flare-header-top-third-element') is same as('empty') and
+        theme_config('flare-header-top-fourth-element') is same as('empty') and
+        theme_config('flare-header-top-fifth-element') is same as('empty'))
+    %}
+        <div class="flare-header-top {{ theme_config('flare-header-top-css-classes') }}">
+            <div class="flare-header-top-container {{ theme_config('flare-header-top-container-css-classes') }}">
+                <div class="flare-header-top-row {{ theme_config('flare-header-top-row-css-classes') }}">
+                    {% block layout_flare_header_top_first_element %}
+                        {% if theme_config('flare-header-top-first-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-top-first-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-top-first-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_top_second_element %}
+                        {% if theme_config('flare-header-top-second-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-top-second-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-top-second-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_top_third_element %}
+                        {% if theme_config('flare-header-top-third-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-top-third-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-top-third-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_top_fourth_element %}
+                        {% if theme_config('flare-header-top-fourth-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-top-fourth-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-top-fourth-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_top_fifth_element %}
+                        {% if theme_config('flare-header-top-fifth-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-top-fifth-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-top-fifth-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+{% block layout_flare_header_main %}
+    {% if not (
+        theme_config('flare-header-main-first-element') is same as('empty') and
+        theme_config('flare-header-main-second-element') is same as('empty') and
+        theme_config('flare-header-main-third-element') is same as('empty') and
+        theme_config('flare-header-main-fourth-element') is same as('empty') and
+        theme_config('flare-header-main-fifth-element') is same as('empty'))
+    %}
+        <div class="flare-header-main {{ theme_config('flare-header-main-css-classes') }}">
+            <div class="flare-header-main-container {{ theme_config('flare-header-main-container-css-classes') }}">
+                <div class="flare-header-main-row {{ theme_config('flare-header-main-row-css-classes') }}">
+                    {% block layout_flare_header_main_first_element %}
+                        {% if theme_config('flare-header-main-first-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-main-first-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-main-first-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_main_second_element %}
+                        {% if theme_config('flare-header-main-second-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-main-second-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-main-second-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_main_third_element %}
+                        {% if theme_config('flare-header-main-third-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-main-third-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-main-third-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_main_fourth_element %}
+                        {% if theme_config('flare-header-main-fourth-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-main-fourth-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-main-fourth-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_main_fifth_element %}
+                        {% if theme_config('flare-header-main-fifth-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-main-fifth-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-main-fifth-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+{% block layout_flare_header_bot %}
+    {% if not (
+        theme_config('flare-header-bot-first-element') is same as('empty') and
+        theme_config('flare-header-bot-second-element') is same as('empty') and
+        theme_config('flare-header-bot-third-element') is same as('empty') and
+        theme_config('flare-header-bot-fourth-element') is same as('empty') and
+        theme_config('flare-header-bot-fifth-element') is same as('empty'))
+    %}
+        <div class="flare-header-bot {{ theme_config('flare-header-bot-css-classes') }}">
+            <div class="flare-header-bot-container {{ theme_config('flare-header-bot-container-css-classes') }}">
+                <div class="flare-header-bot-row {{ theme_config('flare-header-bot-row-css-classes') }}">
+                    {% block layout_flare_header_bot_first_element %}
+                        {% if theme_config('flare-header-bot-first-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-bot-first-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-bot-first-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_bot_second_element %}
+                        {% if theme_config('flare-header-bot-second-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-bot-second-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-bot-second-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_bot_third_element %}
+                        {% if theme_config('flare-header-bot-third-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-bot-third-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-bot-third-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_bot_fourth_element %}
+                        {% if theme_config('flare-header-bot-fourth-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-bot-fourth-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-bot-fourth-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block layout_flare_header_bot_fifth_element %}
+                        {% if theme_config('flare-header-bot-fifth-element') is not same as('empty') %}
+                            {% sw_include '@Storefront/storefront/flaretheme/layout/header/element/flare-header-element-' ~ theme_config('flare-header-bot-fifth-element') ~ '.html.twig' ignore missing
+                                with { flareHeaderElementCssClasses : theme_config('flare-header-bot-fifth-element-css-classes') }
+                            %}
+                        {% endif %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+/*
+Header
+==================================================
+*/
+
+.flare-header {
+    &-top {
+        background-color: $header-top-background-color-full-width;
+
+        &-container {
+            background-color: $header-top-background-color-boxed;
+        }
+    }
+
+    &-main {
+        background-color: $header-main-background-color-full-width;
+
+        &-container {
+            background-color: $header-main-background-color-boxed;
+        }
+    }
+
+    &-bot {
+        background-color: $header-bot-background-color-full-width;
+
+        &-container {
+            background-color: $header-main-background-color-boxed;
+        }
+    }
+}

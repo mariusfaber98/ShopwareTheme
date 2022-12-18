@@ -1,0 +1,32 @@
+/*
+Actions
+==================================================
+*/
+
+.header-actions-btn {
+    .icon {
+        color: $header-actions-icon-color;
+    }
+
+    &:hover {
+        &,
+        .icon {
+            color: $header-actions-icon-color-hover;
+        }
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.header-cart-total {
+    color: $primary;
+    font-size: $font-size-lg;
+}
+
+@include media-breakpoint-up(sm) {
+    .header-cart-badge {
+        display: none;
+    }
+}

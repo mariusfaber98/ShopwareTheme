@@ -1,0 +1,38 @@
+{% block layout_flare_header_search %}
+    <div class="header-search-col {{ flareHeaderElementCssClasses }}">
+        {% block layout_header_search %}
+            <div class="header-search {{ theme_config('flare-header-search-css-classes') }}">
+                <form action="{{ path('frontend.search.page') }}"
+                      method="get"
+                      data-search-form="true"
+                      data-url="{{ path('frontend.search.suggest') }}?search="
+                      class="header-search-form">
+                    {% block layout_header_search_input_group %}
+                        <div class="flare-header-search-group {{ theme_config('flare-header-search-group-css-classes') }} {{ theme_config('flare-header-search-button-position') }}">
+                            {% block layout_header_search_input %}
+                                <input type="search"
+                                       name="search"
+                                       class="flare-header-search-input {{ theme_config('flare-header-search-input-css-classes') }}"
+                                       autocomplete="off"
+                                       autocapitalize="off"
+                                       placeholder="{{ "header.searchPlaceholder"|trans|striptags }}"
+                                       aria-label="{{ "header.searchPlaceholder"|trans|striptags }}"
+                                       value="{{ page.searchTerm }}"
+                                >
+                            {% endblock %}
+                            {% block layout_header_search_button %}
+                                <button type="submit"
+                                        class="flare-header-search-button {{ theme_config('flare-header-search-button-css-classes') }}"
+                                        aria-label="{{ "header.searchButton"|trans|striptags }}">
+                                <span class="header-search-icon">
+                                    {% sw_icon 'search' %}
+                                </span>
+                                </button>
+                            {% endblock %}
+                        </div>
+                    {% endblock %}
+                </form>
+            </div>
+        {% endblock %}
+    </div>
+{% endblock %}

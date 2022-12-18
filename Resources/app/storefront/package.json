@@ -1,0 +1,12 @@
+{
+  "name": "flare-theme",
+  "version": "1.0.0",
+  "author": "flaretheme.com",
+  "scripts": {
+    "lint:scss": "stylelint --config .stylelintrc.json ./src/scss"
+  },
+  "devDependencies": {
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard-scss": "^3.0.0"
+  }
+}

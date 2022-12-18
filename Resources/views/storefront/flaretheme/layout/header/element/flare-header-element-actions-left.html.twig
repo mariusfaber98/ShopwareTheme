@@ -1,0 +1,45 @@
+{% block layout_flare_header_actions_left %}
+    <div class="flare-header-actions-left-col {{ flareHeaderElementCssClasses }}">
+        <div class="flare-header-actions-left-row {{ theme_config('flare-header-actions-left-row-css-classes') }}">
+            {% block layout_flare_header_first_action_left %}
+                {% if theme_config('flare-header-first-action-left') is not same as('empty') %}
+                    {% sw_include '@Storefront/storefront/flaretheme/layout/header/actions/flare-header-action-' ~ theme_config('flare-header-first-action-left') ~ '.html.twig' ignore missing
+                        with { flareHeaderActionCssClasses : theme_config('flare-header-first-action-left-css-classes') }
+                    %}
+                {% endif %}
+            {% endblock %}
+
+            {% block layout_flare_header_second_action_left %}
+                {% if theme_config('flare-header-second-action-left') is not same as('empty') %}
+                    {% sw_include '@Storefront/storefront/flaretheme/layout/header/actions/flare-header-action-' ~ theme_config('flare-header-second-action-left') ~ '.html.twig' ignore missing
+                        with { flareHeaderActionCssClasses : theme_config('flare-header-second-action-left-css-classes') }
+                    %}
+                {% endif %}
+            {% endblock %}
+
+            {% block layout_flare_header_third_action_left %}
+                {% if theme_config('flare-header-third-action-left') is not same as('empty') %}
+                    {% sw_include '@Storefront/storefront/flaretheme/layout/header/actions/flare-header-action-' ~ theme_config('flare-header-third-action-left') ~ '.html.twig' ignore missing
+                        with { flareHeaderActionCssClasses : theme_config('flare-header-third-action-left-css-classes') }
+                    %}
+                {% endif %}
+            {% endblock %}
+
+            {% block layout_flare_header_fourth_action_left %}
+                {% if theme_config('flare-header-fourth-action-left') is not same as('empty') %}
+                    {% sw_include '@Storefront/storefront/flaretheme/layout/header/actions/flare-header-action-' ~ theme_config('flare-header-fourth-action-left') ~ '.html.twig' ignore missing
+                        with { flareHeaderActionCssClasses : theme_config('flare-header-fourth-action-left-css-classes') }
+                    %}
+                {% endif %}
+            {% endblock %}
+
+            {% block layout_flare_header_fifth_action_left %}
+                {% if theme_config('flare-header-fifth-action-left') is not same as('empty') %}
+                    {% sw_include '@Storefront/storefront/flaretheme/layout/header/actions/flare-header-action-' ~ theme_config('flare-header-fifth-action-left') ~ '.html.twig' ignore missing
+                        with { flareHeaderActionCssClasses : theme_config('flare-header-fifth-action-left-css-classes') }
+                    %}
+                {% endif %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
